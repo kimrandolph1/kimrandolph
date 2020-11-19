@@ -1,0 +1,123 @@
+/* IBM Plex Serif */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+
+:root {
+	--gray: #EAEAEA;
+	--lightpurple: #C7A1CA;
+	--teal: #6DAACE;
+	--darkteal: #5C8AA3;
+	--purple: #78488A;
+	--black: #383E40;
+	--shadow: #383e40a9;
+	--white: #FFFFFF;
+	--body: 'IBM Plex Serif', serif;
+	--subheading: 'Montserrat', sans-serif;
+	--heading: 'Playfair Display', serif;
+}
+
+body {
+	margin: 0;
+	font-family: var(--body);
+	font-size: 14px;
+	line-height: 1.5;
+	color: var(--black);
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5em 0;
+	font-weight: 400;
+	line-height: 1.2;
+	color: var(--black);
+}
+
+p {
+	color: var(--black);
+}
+
+h1 {
+	font-family: var(--heading);
+  font-size: 2.4rem;
+  color: var(--purple);
+  font-style: italic;
+  font-weight: 300;
+}
+
+a {
+	color: var(--teal);
+	text-decoration: none;
+}
+/* a:hover {
+	text-decoration: underline;
+} */
+
+/* utils */
+
+	.row {
+		margin: 4rem auto;
+	}
+
+	.row > * {
+		margin: 0 auto;
+	}
+
+	.para {
+		max-width: 700px;
+		margin: 1.5rem auto;
+	}
+
+	.icon {
+		color: white;
+		background-color: var(--lightpurple);
+		padding: .5rem;
+		border-radius: 50%;
+		width: 13px;
+		height: 13px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.icon-invert {
+		color: var(--purple);
+		background-color: var(--gray);
+		padding: .5rem;
+		border-radius: 50%;
+		width: 13px;
+		height: 13px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.button {
+		background: var(--purple);
+		color: var(--white);
+		padding: .5rem;
+		font-weight: 300;
+		font-family: var(--subheading);
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+	}
+	.button:hover {
+		transform: scale(1.05);
+	}
+	.lt-button {
+		background: var(--white);
+		font-size: .8rem;
+		color: var(--purple);
+		padding: .75rem 1rem;
+		width: 225px;
+		display: block;
+	}
+
+@media (min-width: 400px) {
+	body {
+		font-size: 16px;
+	}
+}
