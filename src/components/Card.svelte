@@ -26,9 +26,11 @@
   }
 
   p {
-    padding: 1.2rem;
+    padding: 1rem;
+    padding-top: .2rem;
     text-align: left;
     margin: 0;
+    line-height: 1.3;
   }
 
   .card {

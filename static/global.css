@@ -23,7 +23,7 @@ body {
 	margin: 0;
 	font-family: var(--body);
 	font-size: 14px;
-	line-height: 1.5;
+	line-height: 1.2;
 	color: var(--black);
 	width: 100vw;
 	overflow-x: hidden;
@@ -52,9 +52,6 @@ a {
 	color: var(--teal);
 	text-decoration: none;
 }
-/* a:hover {
-	text-decoration: underline;
-} */
 
 /* utils */
 

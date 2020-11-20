@@ -47,12 +47,14 @@ header {
   background: linear-gradient(0deg, var(--lightpurple) 0%, var(--white) 100%);
   clip-path: ellipse(calc(100% + 150vw) 100% at 50% 0%);
 }
+
 h1 {
   text-align: right;
   margin: 0;
 }
+
 p {
-  font-family: var(--content);
+  font-family: var(--body);
   text-align: right;
   font-size: 1.2rem;
   margin-top: 0;
@@ -91,16 +93,11 @@ p {
   min-height: 700px;
   margin-top: 200px;
 }
-.inner-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: max-content;
-}
 #calc {
-  transform: scale(.94) translate(5%, -30%);
+  transform: scale(.90) translate(0%, -30%);
   filter: drop-shadow(0px 0px 32px var(--shadow));
 }
+
 #hero-card {
   margin: 2rem auto;
   padding: 2rem;
@@ -112,21 +109,29 @@ p {
   max-width: 850px;
 }
 
-
+.inner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: max-content;
+}
 
 @media screen and (min-width: 500px) {
   .header-item > a {
     font-size: 1rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .header-item > a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
+
   .logo {
     max-width: 500px;
   }
 }
+
 @media screen and (max-width: 900px) {
   #hero-card {
     max-width: 80vw;
