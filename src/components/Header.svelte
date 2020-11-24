@@ -93,6 +93,7 @@ p {
 .hero {
   min-height: calc(550px + 20vw);
   margin-top: 200px;
+  overflow-x: clip;
 }
 #calc {
   /* width:100%;
@@ -196,7 +197,7 @@ p {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .inner-text > h1 {
     font-size: 5vw;
   }
