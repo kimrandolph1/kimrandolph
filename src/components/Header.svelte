@@ -182,9 +182,11 @@ p {
   .inner-text > h1 {
     font-size: 3.5vw;
   }
-
   .inner-text > p {
     font-size: 2.5vw;
+  }
+  .inner-text > a {
+    font-size: 2vw;
   }
 }
 
@@ -199,10 +201,10 @@ p {
 
 @media screen and (max-width: 400px) {
   .inner-text > h1 {
-    font-size: 5vw;
+    font-size: 4.6vw;
   }
   .inner-text > p {
-    font-size: 3.5vw;
+    font-size: 3.3vw;
   }
 }
 
