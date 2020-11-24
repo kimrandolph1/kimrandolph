@@ -73,7 +73,7 @@
 		<p class="para">Kim helps business owners understand more about their finances to make informed decisions and find potential savings. Using an Enrolled Agent like Kim with 18 years experience in accounting and 15 years working with CPA firms ensures that reporting is done correctly to avoid liability.</p>
 		<p class="para">Businesses who need to work with state and federal agencies are more likely to reach more favorable audit outcomes when using a professional that understands complex tax laws.</p>
 		<a href="/" class="button lt-button">contact kim today</a>
-		<div class="card-grid">
+		<div class="card-grid inset-row">
 			{#each cardData as card}
 				<Card {...card}/>
 			{/each}
@@ -87,9 +87,6 @@
 				<p><span>{ title } </span>{ copy }</p>
 			{/each}
 		</div>
-	<!-- TODO: 
-				- adjust template for columns per design
-		-->
 	</div>
 </div>
 <div class="row" id="row4">
@@ -132,7 +129,7 @@
 	#row3 > h1 {
 		font-size: 3rem;
 		padding: 2rem;
-		margin-top: 0;
+		margin: -1rem;
 		color: var(--white);
 		font-style: normal;
 		background: var(--darkteal);
@@ -145,9 +142,9 @@
 	}
 
 	.card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		grid-gap: 2rem;
+		/* display: grid; */
+		/* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+		gap: 2rem;
 		margin: 2rem auto;
 	}
 
@@ -155,12 +152,15 @@
 		columns: 3; 
 		text-align: left;
 		margin: 4rem;
+		margin-top: 5rem;
 		gap: 5.5rem;
-		padding-bottom: 4rem;
+		padding-bottom: 2rem;
 	}
 
 	#columns > p {
-		font-size: 1.1rem;
+		font-size: 1.4rem;
+		line-height: 1.4;
+		margin-bottom:1rem;
 		-webkit-column-break-inside: avoid;
           page-break-inside: avoid;
                break-inside: avoid;
@@ -181,9 +181,16 @@
 	#row4 > p {
 		font-size: 1.1rem;
 	}
+
 	#row4 > img {
 		max-width: 75vw;
 		margin-bottom: -150px;
+	}
+
+	@media screen and (max-width: 900px){
+		.card-grid {
+			display: block;
+		}
 	}
 
 	@media screen and (max-width: 700px){
@@ -192,6 +199,7 @@
 			margin-top: 2rem;
 		}
 	}
+
 	@media screen and (max-width: 500px){
 		#columns {
 			columns: 1;

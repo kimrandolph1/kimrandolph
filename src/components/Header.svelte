@@ -36,7 +36,7 @@
         <p>From setting up and maintaining bookkeeping systems to working with state and federal agencies, as an Enrolled Agent, Kim Randolph provides the accounting expertise you need, and the credibility you want.</p>
         <a href="/" class="button">schedule a free consultation</a>
       </div>
-      <img id="calc" src="./images/calculator.png" alt="">
+      <img id="calc" class="" src="./images/calculator.png" alt="">
     </div>
   </div>
 </header>
@@ -94,7 +94,9 @@ p {
   margin-top: 200px;
 }
 #calc {
-  transform: scale(.90) translate(0%, -30%);
+  /* width:100%;
+  height:100%; */
+  transform: scale(.90) translate(0vw, -30%);
   filter: drop-shadow(0px 0px 32px var(--shadow));
 }
 
@@ -113,7 +115,19 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  height: max-content;
+  height: min-content;
+  margin-right: 3rem;
+  
+}
+
+.inner-text > h1 {
+  margin-bottom: 1rem;
+}
+
+.inner-text > p {
+  line-height:1.4;
+  font-size:1.4rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 500px) {
@@ -142,7 +156,7 @@ p {
   }
   
   #calc {
-    transform: scale(.84) translate(5%, -30%);
+    transform: scale(.84) translate(-10vw, -30%);
   }
 }
 </style>

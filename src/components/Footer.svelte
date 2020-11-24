@@ -4,8 +4,8 @@
 </script>
 
 <footer>
-  <div id="email-form-cont">
-    <div id="inner-text">
+  <div id="email-form-cont" class="flex-row">
+    <div id="inner-text" class="column">
       <h1>Reach Out!</h1>
       <p>Use the contact form to schedule a free consultaion, or to find out more about how Kim Randolph, Enrolled Agent can help your business.</p>
       <div id="number-wrap">
@@ -23,11 +23,13 @@
         </p>
       </div>
     </div>
-    <form method="post" action="submit.php" name="Email">
+
+    <form method="post" action="submit.php" name="Email" class="column">
+      <input class="antispam" type="text" name="URL">
       <input type="text" for="Email" name="Name" placeholder="Name" />
       <input type="email" for="Email" name="Email" placeholder="Email" />
       <textarea for="Email" name="Message" placeholder="Message" />
-      <button type="submit" for="Email">SEND</button>
+      <button type="submit" for="Email" value="submit">SEND</button>
     </form>
   </div>
   <hr>    
@@ -35,24 +37,25 @@
 </footer>
 
 <style>
+  .antispam {
+    display: none;
+  }
   footer {
     background: var(--lightpurple);
     background: linear-gradient(0deg, var(--white) 0%, var(--lightpurple) 100%);
     clip-path: ellipse(calc(100% + 10vw) 100% at 50% 100%);
-    min-height: 450px;
+    /* min-height: 450px; */
     padding: 0 3rem;
     padding-top: 4rem;
   }
 
   #email-form-cont {
-    display: grid;
-    grid-template-columns: 400px auto;
-    grid-template-rows: auto;
     margin: 1rem 3rem;
   }
 
   #inner-text {
     max-width: 90vw;
+    
   }
 
   #inner-text > h1{
@@ -71,6 +74,7 @@
   }
 
   form {
+    flex: 2;
     width: 100%;
     display: grid;
     grid-template-rows: 2rem 2rem 8rem 2rem;
@@ -123,7 +127,7 @@
 
   @media screen and (max-width:768px){
     #email-form-cont {
-      grid-template-columns: 1fr;
+      /* grid-template-columns: 1fr; */
       margin: 0;
     }
 
