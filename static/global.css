@@ -95,11 +95,14 @@ a {
 	.button {
 		background: var(--purple);
 		color: var(--white);
-		padding: .5rem;
+		/* padding: .5rem; */
 		font-weight: 300;
 		font-family: var(--subheading);
 		text-transform: uppercase;
 		margin-bottom: 1rem;
+		padding: .75rem;
+		font-size: 1.3vw;
+		white-space: nowrap;
 	}
 	.button:hover {
 		transform: scale(1.05);

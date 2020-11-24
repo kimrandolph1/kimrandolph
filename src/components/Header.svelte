@@ -80,24 +80,29 @@ p {
 
 .header-item {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .header-item > a {
   margin: .5rem;
+  margin-bottom: 2rem;
   font-size: .70rem;
   white-space: nowrap;
 }
 
 .hero {
-  min-height: 700px;
+  min-height: calc(550px + 20vw);
   margin-top: 200px;
 }
 #calc {
   /* width:100%;
   height:100%; */
-  transform: scale(.90) translate(0vw, -30%);
+  /* transform: scale(.90) translate(0vw, -30%); */
+  transform: scale(.90) translate(0vw, -20vw);
   filter: drop-shadow(0px 0px 32px var(--shadow));
+  width: 50vw;
+  height: auto;
+  min-width: 400px;
 }
 
 #hero-card {
@@ -105,10 +110,12 @@ p {
   padding: 2rem;
   background: white;
   display: grid;
-  grid-template-columns: 400px 1fr;
+  /* grid-template-columns: 400px 1fr; */
   grid-template-rows: auto;
-  max-height: 450px;
-  max-width: 850px;
+  grid-template-columns: 35vw 1fr;
+  height: 37vw;
+  max-width: 70vw;
+  min-height: 275px;
 }
 
 .inner-text {
@@ -116,17 +123,18 @@ p {
   flex-direction: column;
   align-items: flex-end;
   height: min-content;
-  margin-right: 3rem;
-  
+  /* margin-right: 3rem; */
+  max-height: 30vw;
 }
 
 .inner-text > h1 {
   margin-bottom: 1rem;
+  font-size: 3vw;
 }
 
 .inner-text > p {
   line-height:1.4;
-  font-size:1.4rem;
+  font-size: 2vw;
   margin-bottom: 2rem;
 }
 
@@ -153,10 +161,48 @@ p {
 
   .hero {
     margin-top: 100px;
+    min-height: calc(550px + 5vw);
   }
   
   #calc {
-    transform: scale(.84) translate(-10vw, -30%);
+    transform: translate(5vw, -25%);
   }
 }
+
+@media screen and (max-width: 600px) {
+
+  #hero-card {
+    min-height: 350px;
+  }
+  .inner-text {
+    margin-top:-.5vw;
+    width: 110%;
+  }
+  .inner-text > h1 {
+    font-size: 3.5vw;
+  }
+
+  .inner-text > p {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .inner-text > h1 {
+    font-size: 4.5vw;
+  }
+  .inner-text > p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .inner-text > h1 {
+    font-size: 5vw;
+  }
+  .inner-text > p {
+    font-size: 3.5vw;
+  }
+}
+
 </style>
