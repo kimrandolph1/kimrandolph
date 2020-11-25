@@ -85,6 +85,7 @@ p {
 
 .header-item > a {
   margin: .5rem;
+  margin-top: .25rem;
   margin-bottom: 2rem;
   font-size: .70rem;
   white-space: nowrap;
@@ -156,6 +157,10 @@ p {
 }
 
 @media screen and (max-width: 900px) {
+  .header-item > a {
+    margin-top: .5rem;
+  }
+
   #hero-card {
     max-width: 80vw;
   }
