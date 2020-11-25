@@ -43,7 +43,7 @@
   footer {
     background: var(--lightpurple);
     background: linear-gradient(0deg, var(--white) 0%, var(--lightpurple) 100%);
-    clip-path: ellipse(calc(100% + 10vw) 100% at 50% 100%);
+    clip-path: ellipse(calc(100% + 50vw) 100% at 50% 100%);
     /* min-height: 450px; */
     padding: 0 3rem;
     padding-top: 4rem;
@@ -61,6 +61,11 @@
   #inner-text > h1{
     font-size: 3.2rem;
     color: var(--white);
+  }
+
+  #number-wrap {
+    display: flex;
+    flex-direction: column;
   }
 
   #number-wrap > p, #number-wrap > a {
@@ -136,10 +141,19 @@
     }
 
     #number-wrap {
-      display: flex;
+      flex-direction: row;
       width: 100%;
       justify-content: space-between;
       align-items: center;
+      margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width:500px){
+    #number-wrap {
+      flex-direction: column;
+      gap: .5rem;
+      
     }
   }
 </style>

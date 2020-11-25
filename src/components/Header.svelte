@@ -45,7 +45,7 @@
 header {
   background: var(--lightpurple);
   background: linear-gradient(0deg, var(--lightpurple) 0%, var(--white) 100%);
-  clip-path: ellipse(calc(100% + 150vw) 100% at 50% 0%);
+  clip-path: ellipse(calc(150% + 50vw) 100% at 50% 0%);
 }
 
 h1 {

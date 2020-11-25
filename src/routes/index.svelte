@@ -137,7 +137,7 @@
 	}
 
 	#row-wrap {
-		clip-path: ellipse(calc(150% + 35vw) 50% at 50% 50%);
+		clip-path: ellipse(calc(150% + 50vw) 50% at 50% 50%);
 		margin-top: 4rem;
 	}
 
@@ -197,6 +197,12 @@
 		#columns {
 			columns: 2;
 			margin-top: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 550px){
+		#row4 > img {
+			margin-bottom: -130px;
 		}
 	}
 
