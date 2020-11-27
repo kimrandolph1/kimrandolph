@@ -13,7 +13,7 @@
       id: "two",
       title: "A Growing Business",
       content: [
-        "Hiring professional services like accounting and legal experts is important to help your business grow. Maturing start-up businesses need their books set up correctly to maintain accuracy for IRS compliance and tax filing.",
+        "Hiring professional services like accounting and legal experts is important to help your business grow. Maturing businesses need their books set up correctly to maintain accuracy for IRS compliance and tax filing.",
         "Kim provides financial & tax guidance in addition to fully managing all of your financial filing & reporting."
       ]
     },
