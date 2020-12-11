@@ -3,9 +3,10 @@
   import FaPencilAlt from 'svelte-icons/fa/FaPencilAlt.svelte';
 
   let vw; 
+  let y;
 </script>
 
-<svelte:window bind:innerWidth={vw}/>
+<svelte:window bind:innerWidth={vw} bind:scrollY={y}/>
 
 <header>
   <div id="header-top">
@@ -34,7 +35,7 @@
       <div class="inner-text">
         <h1>A complete solution for your small business accounting needs</h1>
         <p>From setting up and maintaining bookkeeping systems to working with state and federal agencies, as an Enrolled Agent, Kim Randolph provides the accounting expertise you need, and the credibility you want.</p>
-        <a href="/" class="button">schedule a free consultation</a>
+        <a href="/" class="button" on:click={() => y = 4000}>schedule a free consultation</a>
       </div>
       <img id="calc" class="" src="./images/calculator.png" alt="">
     </div>
