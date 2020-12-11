@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <form method="post" action="submit.php" name="Email" class="column">
+    <form method="POST" name="Email" class="column" data-netlify=true>
       <input class="antispam" type="text" name="URL">
       <input type="text" for="Email" name="name" placeholder="Name" />
       <input type="email" for="Email" name="email" placeholder="Email" />
