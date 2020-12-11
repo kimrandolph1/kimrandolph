@@ -30,5 +30,13 @@
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
 	<div id="sapper">%sapper.html%</div>
+
+	<form class="column" name="contact" method="POST" hidden="">
+		<input type="hidden" name="form-name" value="contact" />
+		<input type="text" name="name" placeholder="Name" />
+		<input type="email" name="email" placeholder="Email" />
+		<textarea name="message" placeholder="Message" />
+		<button type="submit">Send</button>
+	</form>
 </body>
 </html>

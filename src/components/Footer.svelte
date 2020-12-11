@@ -25,7 +25,7 @@
     </div>
 
     <form class="column" name="contact" method="POST" netlify action='/'>
-      <input type="hidden" name="contact" value="contact" />
+      <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="name" placeholder="Name" />
       <input type="email" name="email" placeholder="Email" />
       <textarea name="message" placeholder="Message" />
