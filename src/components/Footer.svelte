@@ -26,10 +26,10 @@
 
     <form method="post" action="submit.php" name="Email" class="column">
       <input class="antispam" type="text" name="URL">
-      <input type="text" for="Email" name="Name" placeholder="Name" />
-      <input type="email" for="Email" name="Email" placeholder="Email" />
-      <textarea for="Email" name="Message" placeholder="Message" />
-      <button type="submit" for="Email" value="submit">SEND</button>
+      <input type="text" for="Email" name="name" placeholder="Name" />
+      <input type="email" for="Email" name="email" placeholder="Email" />
+      <textarea for="Email" name="message" placeholder="Message" />
+      <input type="submit" for="Email" value="Send" />
     </form>
   </div>
   <hr>    
@@ -97,11 +97,11 @@
     font-style: italic;
   }
 
-  form > [name=Message] {
+  form > [name=message] {
     padding: .5rem;
   }
 
-  form > button {
+  form > [type=submit] {
     width: 200px;
     justify-self: end;
     font-family: var(--subheading);
@@ -113,11 +113,15 @@
     font-weight: lighter;
   }
 
+  form > [type=submit]:hover{
+    cursor: pointer;
+  }
+
   textarea {
     border: none;
     resize: none;
     outline: none;
-}
+  }
 
   hr {
     width: 95%;

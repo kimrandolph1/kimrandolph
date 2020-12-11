@@ -106,6 +106,7 @@ a {
 	}
 	.button:hover {
 		transform: scale(1.05);
+		cursor: pointer;
 	}
 	.lt-button {
 		background: var(--white);
