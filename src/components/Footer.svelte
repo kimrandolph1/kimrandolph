@@ -25,11 +25,10 @@
     </div>
 
     <form method="POST" name="Email" class="column" data-netlify=true>
-      <input class="antispam" type="text" name="URL">
-      <input type="text" for="Email" name="name" placeholder="Name" />
-      <input type="email" for="Email" name="email" placeholder="Email" />
+      <input type="text" name="name" placeholder="Name" />
+      <input type="email" name="email" placeholder="Email" />
       <textarea for="Email" name="message" placeholder="Message" />
-      <input type="submit" for="Email" value="Send" />
+      <input type="submit" value="Send" />
     </form>
   </div>
   <hr>    
@@ -37,9 +36,6 @@
 </footer>
 
 <style>
-  .antispam {
-    display: none;
-  }
   footer {
     background: var(--lightpurple);
     background: linear-gradient(0deg, var(--white) 0%, var(--lightpurple) 100%);
