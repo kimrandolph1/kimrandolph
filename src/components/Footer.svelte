@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <form method="POST" name="Email" class="column" netlify>
+    <form method="POST" name="Email" class="column" data-netlify=true>
       <input class="antispam" type="text" name="URL">
       <input type="text" for="Email" name="Name" placeholder="Name" />
       <input type="email" for="Email" name="Email" placeholder="Email" />
