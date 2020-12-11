@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <form class="column" name="Email" method="POST" netlify action='/index.html'>
+    <form class="column" name="Email" method="POST" netlify action='/'>
       <input type="text" name="name" placeholder="Name" />
       <input type="email" name="email" placeholder="Email" />
       <textarea name="message" placeholder="Message" />
