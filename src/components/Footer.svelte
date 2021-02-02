@@ -21,6 +21,8 @@
           </span>
           360-477-4444
         </p>
+        <p>50 Ridge Place<br>
+          Sequim, WA 9838</p>
       </div>
     </div>
 
